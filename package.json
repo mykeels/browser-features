@@ -1,6 +1,6 @@
 {
-  "name": "browser-features",
-  "version": "1.1.0",
+  "name": "@mykeels/browser-features",
+  "version": "1.1.1",
   "description": "Browser features",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fernandojsg/browser-features.git"
+    "url": "git+https://github.com/mykeels/browser-features.git"
   },
-  "author": "Fernando Serrano <fernandojsg@gmail.com>",
+  "author": "mykeels",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fernandojsg/browser-features/issues"
+    "url": "https://github.com/mykeels/browser-features/issues"
   },
-  "homepage": "https://github.com/fernandojsg/browser-features#readme",
+  "homepage": "https://github.com/mykeels/browser-features#readme",
   "dependencies": {
     "useragent-info": "^1.0.0"
   }
