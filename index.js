@@ -1,4 +1,4 @@
-const userAgentInfo = require('useragent-info');
+import userAgentInfo from 'useragent-info';
 
 function endianness() {
   var heap = new ArrayBuffer(0x10000);
@@ -22,7 +22,7 @@ function padLengthLeft(s, len, ch) {
 // Performs the browser feature test. Immediately returns a JS object that contains the results of all synchronously computable fields, and launches asynchronous
 // tasks that perform the remaining tests. Once the async tasks have finished, the given successCallback function is called, with the full browser feature test
 // results object as the first parameter.
-module.exports = function browserFeatureTest(successCallback) {
+export default function browserFeatureTest(successCallback) {
   var apis = {};
   function setApiSupport(apiname, cmp) {
     if (cmp) apis[apiname] = true;
