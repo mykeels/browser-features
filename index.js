@@ -1,4 +1,4 @@
-import userAgentInfo from 'useragent-info';
+const userAgentInfo = require('useragent-info');
 
 function endianness() {
   var heap = new ArrayBuffer(0x10000);
