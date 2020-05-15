@@ -5,18 +5,11 @@ module.exports = {
     rules: [
       {
         test: /\.(js)$/,
-        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
             presets: [
-              [
-                'env',
-                {
-                  modules: 'commonjs',
-                  useBuiltIns: 'usage'
-                }
-              ]
+              'env'
             ]
           }
         }
@@ -29,7 +22,9 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     publicPath: '/',
-    filename: 'index.js'
+    filename: 'index.js',
+    library: '',
+    libraryTarget: 'commonjs'
   },
   devServer: {
     contentBase: './dist'
